@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Person" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Social Comments - Labs - Emerson Estrella - Passionate software engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emerson Estrella - Passionate software engineer">
+    <meta name="author" content="Emerson Estrella">
+
+    <meta itemprop="name" content="Emerson Estrella">
+    <meta itemprop="description" content="Passionate software engineer">
+
+    <!-- Le styles -->
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../assets/css/docs.css" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Emerson Estrella</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li>
+                <a href="../../index.html">Home</a>
+              </li>
+              <li>
+                <a href="../../index.html#about">About</a>
+              </li>
+              <li>
+                <a href="../../index.html#recent-work">Recent Work</a>
+              </li>
+              <li>
+                <a href="../../index.html#projects">Projects</a>
+              </li>
+              <li>
+                <a href="../../index.html#blog">Blog</a>
+              </li>
+              <li>
+                <a href="../../index.html#connect">Connect</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Social Comments</h1>
+    <p class="lead">Social Comments is a social plugin that enables your site to fetch and display all comments from social networks, in one single interface. Supports: Facebook, Twitter, and Google+ (soon).</p>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span12">
+
+        <!-- Twitter
+        ================================================== -->
+        <section id="twitter">
+          <div class="page-header">
+            <h1>1. Twitter: Choose hashtags or users <small>"#sometimesiwishthat", "#OMG"</small></h1>
+          </div>
+          <p class="lead">You can also use simple operators as "OR" & "AND". Examples: "@AP AND #tech", "@AP OR @pressassoc"</p>
+          <div class="well">
+            <div class="row-fluid">
+              <div class="span6">
+                <h2>Hashtags <small>operator-separated or single values</small></h2>
+                <p><input type="text" placeholder="#libya OR #Egypt" /></p>
+              </div>
+              <div class="span6">
+                <h2>Users <small>operator-separated or single values</small></h2>
+                <p><input type="text" placeholder="@AP OR @pressassoc" /></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Facebook
+        ================================================== -->
+        <section id="facebook">
+          <div class="page-header">
+            <h1>2. Facebook: Choose an URL, a Post ID, or an User Name</h1>
+          </div>
+          <p class="lead">To fetch comments on Facebook you have to search by one of this sources: URL, Post ID, User Name. Examples: "http://edition.cnn.com", "312341", "cnn"</p>
+
+          <div class="well">
+            <div class="row-fluid">
+              <div class="span4">
+                <h2>URL</h2>
+                <p><input type="text" placeholder="http://edition.cnn.com" /></p>
+              </div>
+              <div class="span4">
+                <h2>Post ID</h2>
+                <p><input type="text" placeholder="5123453" /></p>
+              </div>
+              <div class="span4">
+                <h2>User Name</h2>
+                <p><input type="text" placeholder="cnn" /></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- results
+        ================================================== -->
+        <section id="results">
+          <div class="page-header">
+            <h1>3. Results</h1>
+          </div>
+
+          <div class="well">
+            <ul class="media-list" id="social-comments">
+              <li class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" data-src="holder.js/64x64">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Media heading</h4>
+                  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                </div>
+              </li>
+              <li class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" data-src="holder.js/64x64">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Media heading</h4>
+                  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>                <!-- Nested media object -->
+  
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACtUlEQVR4Xu2Y20tqURDGPzMqrBCEBJXqJRPJFAUJvID4n3vJIm9QIAqJPgjii0KY2tXON6B4OKfAbbUfnHmRvXXNWvPN5YfL0u/3p1hjs6gAWgHaAjoD1ngGQoegUkApoBRQCigF1lgBxaBiUDGoGFQMrjEE9M+QYlAxqBhUDCoGFYNrrMDKGGw0Guh2u5hOp3C5XPD5fLBYLHNJ/1AGtVoNNpsN4XD4r+8+0/0nfH6210oC1Ot1dDodbG5uiv/X11ccHx/D6/XKM0XJZDLyfmtrC4lEAhsbG1/W20/4/GpDwwK8vb0hm81KRpPJJF5eXtBut7G/vw+PxyN73t/fyzvazs4O4vE4Hh8fcXt7C6vVikgkguFwCAa9vb2N8/Nz5PP5pX0uVtyy3WxYgOfnZzns+/u7BD2ZTKQFTk9P5Qzj8RiXl5c4OjrCw8MDRqORCMXDlstlDAYDOBwOWcfvWDVcb9TnsoHPfm9YAPZ2pVIRP2wBljmNQZydnaFYLEp2U6kUbm5u8PT0NBdgUTyusdvtiEajWMXnrwvADBcKBSndWCwmWby+vpZeDwaDKJVK2N3dxeHhIZrNplTKycmJPNNarZa8p11cXEgVrerTiAiGK4AZ5wxgb1OA2TMF8Pv9qFar/5yHAzCdToPzI5fLzavm4OAAoVBo7sOITyPBc41hATjhWQHMmtvtlk/2tdPpRCAQAMucxqDZDhSImWZwd3d36PV62Nvbk8phdXAAcq1Rn78uADfkALu6upKM0tgO7GUGuWhsDQpACnAgUpAZPSgEuc85MqPJsj5NocBigBx2NGb0u+wnfP7vbIZb4LsCNduPCqA3QnojpDdCeiNk9iQ2c3+lgFJAKaAUUAqYOYXN3lspoBRQCigFlAJmT2Iz91cKKAWUAkoBpYCZU9jsvZUC606BDwz4jZ+RGtXxAAAAAElFTkSuQmCC">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Nested media heading</h4>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                      <!-- Nested media object -->
+                      <div class="media">
+                        <a class="pull-left" href="#">
+                          <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACtUlEQVR4Xu2Y20tqURDGPzMqrBCEBJXqJRPJFAUJvID4n3vJIm9QIAqJPgjii0KY2tXON6B4OKfAbbUfnHmRvXXNWvPN5YfL0u/3p1hjs6gAWgHaAjoD1ngGQoegUkApoBRQCigF1lgBxaBiUDGoGFQMrjEE9M+QYlAxqBhUDCoGFYNrrMDKGGw0Guh2u5hOp3C5XPD5fLBYLHNJ/1AGtVoNNpsN4XD4r+8+0/0nfH6210oC1Ot1dDodbG5uiv/X11ccHx/D6/XKM0XJZDLyfmtrC4lEAhsbG1/W20/4/GpDwwK8vb0hm81KRpPJJF5eXtBut7G/vw+PxyN73t/fyzvazs4O4vE4Hh8fcXt7C6vVikgkguFwCAa9vb2N8/Nz5PP5pX0uVtyy3WxYgOfnZzns+/u7BD2ZTKQFTk9P5Qzj8RiXl5c4OjrCw8MDRqORCMXDlstlDAYDOBwOWcfvWDVcb9TnsoHPfm9YAPZ2pVIRP2wBljmNQZydnaFYLEp2U6kUbm5u8PT0NBdgUTyusdvtiEajWMXnrwvADBcKBSndWCwmWby+vpZeDwaDKJVK2N3dxeHhIZrNplTKycmJPNNarZa8p11cXEgVrerTiAiGK4AZ5wxgb1OA2TMF8Pv9qFar/5yHAzCdToPzI5fLzavm4OAAoVBo7sOITyPBc41hATjhWQHMmtvtlk/2tdPpRCAQAMucxqDZDhSImWZwd3d36PV62Nvbk8phdXAAcq1Rn78uADfkALu6upKM0tgO7GUGuWhsDQpACnAgUpAZPSgEuc85MqPJsj5NocBigBx2NGb0u+wnfP7vbIZb4LsCNduPCqA3QnojpDdCeiNk9iQ2c3+lgFJAKaAUUAqYOYXN3lspoBRQCigFlAJmT2Iz91cKKAWUAkoBpYCZU9jsvZUC606BDwz4jZ+RGtXxAAAAAElFTkSuQmCC">
+                        </a>
+                        <div class="media-body">
+                          <h4 class="media-heading">Nested media heading</h4>
+                          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+        </section>
+
+        <!-- embed
+        ================================================== -->
+        <section id="results">
+          <div class="page-header">
+            <h1>3. Embed</h1>
+          </div>
+          <p class="lead">Embed realtime social comments results into your web site.</p>
+          
+          <div class="well">
+            <textarea>code code code code code code code code code code code code</textarea>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer
+  ================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed and built on top of <a href="https://github.com/twitter/bootstrap" target="_blank">Twitter Bootstrap</a>.</p>
+      <ul class="footer-links">
+        <li><a href="../../index.html#about">About</a></li>
+        <li class="muted">&middot;</li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li class="muted">&middot;</li>
+        <li><a href="../../index.html#blog" target="_blank">Blog</a></li>
+        <li class="muted">&middot;</li>
+        <li><a href="../../index.html#connect">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/bootstrap-transition.js"></script>
+    <script src="../../assets/js/bootstrap-alert.js"></script>
+    <script src="../../assets/js/bootstrap-modal.js"></script>
+    <script src="../../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../../assets/js/bootstrap-tab.js"></script>
+    <script src="../../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../../assets/js/bootstrap-popover.js"></script>
+    <script src="../../assets/js/bootstrap-button.js"></script>
+    <script src="../../assets/js/bootstrap-collapse.js"></script>
+    <script src="../../assets/js/bootstrap-carousel.js"></script>
+    <script src="../../assets/js/bootstrap-affix.js"></script>
+
+    <!-- <script src="../../assets/js/application.js"></script> -->
+
+    <!-- Place this tag after the last +1 button tag. -->
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39175840-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    
+    <!-- Facebook -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        // init the FB JS SDK
+        FB.init({
+          appId      : '162975630531098',                    // App ID from the app dashboard
+          status     : true,                                 // Check Facebook Login status
+          xfbml      : true                                  // Look for social plugins on the page
+        });
+        
+        function sortJsonArrayByProperty(objArray, prop, direction){
+            if (arguments.length<2) throw new Error("sortJsonArrayByProp requires 2 arguments");
+            var direct = arguments.length>2 ? arguments[2] : 1; //Default to ascending
+        
+            if (objArray && objArray.constructor===Array){
+                var propPath = (prop.constructor===Array) ? prop : prop.split(".");
+                objArray.sort(function(a,b){
+                    for (var p in propPath){
+                        if (a[propPath[p]] && b[propPath[p]]){
+                            a = a[propPath[p]];
+                            b = b[propPath[p]];
+                        }
+                    }
+                    // convert numeric strings to integers
+                    //a = a.match(/^\d+$/) ? +a : a;
+                    //b = b.match(/^\d+$/) ? +b : b;
+                    a = +a;
+                    b = +b;
+                    return ( (a < b) ? -1*direct : ((a > b) ? 1*direct : 0) );
+                });
+            }
+        }
+        
+        function timeDifference(current, previous) {
+          var msPerMinute = 60 * 1000;
+          var msPerHour = msPerMinute * 60;
+          var msPerDay = msPerHour * 24;
+          var msPerMonth = msPerDay * 30;
+          var msPerYear = msPerDay * 365;
+          var elapsed = current - previous;
+          if (elapsed < msPerMinute) {
+            return Math.round(elapsed/1000) + ' seconds ago';
+          }
+          else if (elapsed < msPerHour) {
+            return Math.round(elapsed/msPerMinute) + ' minutes ago';
+          }
+          else if (elapsed < msPerDay ) {
+            return Math.round(elapsed/msPerHour ) + ' hours ago';
+          }
+          else if (elapsed < msPerMonth) {
+            return 'approximately ' + Math.round(elapsed/msPerDay) + ' days ago';
+          }
+          else if (elapsed < msPerYear) {
+            return 'approximately ' + Math.round(elapsed/msPerMonth) + ' months ago';
+          }
+          else {
+            return 'approximately ' + Math.round(elapsed/msPerYear ) + ' years ago';
+          }
+        }
+
+        var results = Array();
+
+        //Twitter
+        var user = "@jornal_cultura";
+        $.ajax({
+          url:"http://search.twitter.com/search.json",
+          data: {q: user, count: 50, result_type: "recent"},
+          dataType: 'jsonp',
+          success: function(response){
+            console.log('twitter:');
+            console.log(response);
+            $.each(response.results, function( key, value ) {
+              data = {
+                data: {
+                  from: "twitter",
+                  image: value.profile_image_url,
+                  user: value.from_user,
+                  name: value.from_user_name,
+                  text: value.text,
+                  time: new Date(value.created_at).getTime()
+                }
+              }
+              results.push(data);
+            });
+          }
+        });
+
+        //Facebook
+        var url = "http://cmais.com.br/segundatela/jornaldacultura/18-04-2013";
+        FB.api({
+          method: 'fql.multiquery',
+          queries: {
+           query1: 'SELECT text, time, id, likes, fromid, comments FROM comment WHERE object_id IN (SELECT comments_fbid FROM link_stat WHERE url = \''+url+'\') or object_id in (select post_fbid from comment where object_id in (select comments_fbid from link_stat where url = \''+url+'\')) ORDER BY time DESC',
+           query2: 'SELECT id, name, url, pic FROM profile WHERE id IN (SELECT fromid FROM #query1)'
+         }}, function(response){
+            console.log('facebook:');
+            console.log(response);
+            $.each(response[0].fql_result_set, function( key, value ) {
+              $.each(response[1].fql_result_set, function( key2, value2 ) {
+                if(value.fromid == value2.id){
+                  data = {
+                    data: {
+                      from: "facebook",
+                      image: value2.pic,
+                      user: value2.url,
+                      name: value2.name,
+                      text: value.text,
+                      time: value.time*1000
+                    }
+                  }
+                  results.push(data);
+                }
+              });
+            });
+            console.log('pre:');
+            console.log(results);
+            sortJsonArrayByProperty(results, 'data.time');
+            console.log('final:');
+            console.log(results);
+            $('#social-comments').html(null);
+            var current = new Date();
+            $.each(results, function( key, value ) {
+              var date = new Date(value.data.time);
+              html = '<li class="media"><a class="pull-left" href="#">';
+              html += '<img src="'+value.data.image+'" class="media-object" style="width:64px"></a>';
+              html += '<div class="media-body"><h4 class="media-heading">'+value.data.name+' <small>'+timeDifference(current, date)+'</small></h4>';
+              html += '<p>'+value.data.text+'</p>';
+              html += '</div></li>';
+              $('#social-comments').prepend(html);
+            });
+        });
+      };
+      
+      // Load the SDK asynchronously
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+       
+    </script>
+    
+  </body>
+</html>

@@ -37,7 +37,7 @@ body > .navbar .brand {
   float: right;
   font-weight: bold;
   color: #000;
-  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+  text-shadow: 0 1px 0 rgba(255,255,255,.2), 0 0 40px rgba(255,255,255,.425);
   -webkit-transition: all .2s linear;
      -moz-transition: all .2s linear;
           transition: all .2s linear;
@@ -1001,7 +1001,7 @@ form.bs-docs-example {
   }
 
   .jumbotron .btn {
-    display: block;
+    display: inline-block;
     margin: 5px auto;
     width: 10px;
   }
